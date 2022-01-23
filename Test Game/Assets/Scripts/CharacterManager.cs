@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using System;
 
 public class CharacterManager : MonoBehaviour
 {
@@ -161,7 +163,7 @@ public class CharacterManager : MonoBehaviour
 
 	//Set the text and move of an action button.
 	void SetActionButton(int buttonIndex, Class.Move move) {
-		buttonTransform[buttonIndex].GetComponentInChildren<Text>().text =
+		buttonTransform[buttonIndex].GetComponentInChildren<TMP_Text>().text =
 			move.name;
 		buttonTransform[buttonIndex].GetComponent<ActionButton>().move = move;
 	}

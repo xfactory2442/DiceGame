@@ -51,4 +51,8 @@ public class SceneManager : MonoBehaviour
 			break;
 		}
 	}
+
+	public void ExitGame() {
+		Application.Quit();
+	}
 }
